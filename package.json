@@ -1,5 +1,5 @@
 {
-  "name": "Logpush",
+  "name": "logpush",
   "version": "1.0.0",
   "description": "Testing Cloudflare Logpush API",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "express": "^4.18.1"
   },
   "scripts": {
-    "start": "node",
+    "start": "node index.js",
     "build": "babel src -d . --copy-files",
     "dev": "nodemon --exec babel-node ./src/"
   },
