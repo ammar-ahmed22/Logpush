@@ -10,7 +10,12 @@ app.get("/", (req, res) => {
 
 app.post("/logpush", (req, res) => {
     
-    console.log(req)
+    console.log(req.body)
+
+    res.send(200).send({
+        success: true,
+        message: "data received"
+    })
 
 
 })
