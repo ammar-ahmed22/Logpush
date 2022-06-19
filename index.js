@@ -5,6 +5,11 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 var _express = _interopRequireDefault(require("express"));
 
 var app = (0, _express["default"])();
+app.get("/", function (req, res) {
+  res.status(200).send({
+    "message": "Hello World!"
+  });
+});
 app.post("/logpush", function (req, res) {
   console.log(req);
 });

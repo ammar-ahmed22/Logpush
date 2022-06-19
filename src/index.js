@@ -15,4 +15,4 @@ app.post("/logpush", (req, res) => {
 
 })
 
-app.listen(918, () => console.log("Server running on port 0918"))
+app.listen(process.env.PORT || 918, () => console.log("Server running on port 0918"))
