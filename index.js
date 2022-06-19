@@ -8,6 +8,6 @@ var app = (0, _express["default"])();
 app.post("/logpush", function (req, res) {
   console.log(req);
 });
-app.listen(process.event.PORT || 918, function () {
+app.listen(process.env.PORT || 918, function () {
   return console.log("Server running on port 0918");
 });
