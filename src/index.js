@@ -12,7 +12,7 @@ app.post("/logpush", (req, res) => {
     
     console.log(req.body)
 
-    res.send(200).send({
+    res.status(200).send({
         success: true,
         message: "data received"
     })
